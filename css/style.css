@@ -11,8 +11,51 @@
     GENERAL
 -----------------------*/
 body {
-    background-color: #f6f8f9;
+    background-color: #ccc;
     font-family: "Roboto", sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+.circle {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 100%;
+    /* padding: 10px; */
+}
+
+.btn {
+    background: transparent;
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.btn-blue {
+    background-color: blue;
+    color: #ffffff;
+    border-color: blue;
+}
+
+.tag {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 8px 12px;
+    border-radius: 12px;
+}
+
+.tag-blue {
+    background-color: #14aaf5;
+}
+.tag-purple {
+    background-color: #ab5de6;
 }
 
 /*----------------------
@@ -21,6 +64,7 @@ body {
 header {
     background-color: #ffffff;
     padding: 15px 20px;
+    margin-bottom: 40px;
 }
 
 h1 {
@@ -32,4 +76,15 @@ h1 {
 
 .logo {
     vertical-align: middle;
+}
+
+/*----------------------
+    PAGE MAIN
+-----------------------*/
+main {
+    background-color: #ffffff;
+    width: 800px;
+    margin: auto;
+    border-radius: 10px;
+    padding: 20px;
 }
