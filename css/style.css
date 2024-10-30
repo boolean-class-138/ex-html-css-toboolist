@@ -13,21 +13,33 @@
 body {
     background-color: #ccc;
     font-family: "Roboto", sans-serif;
+    color: #434851;
 }
 
 ul {
     list-style: none;
 }
 
+/*----------------------
+    COMPONENTS
+-----------------------*/
 .circle {
     display: inline-block;
-    height: 40px;
-    width: 40px;
-    line-height: 40px;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
     text-align: center;
     border: 1px solid black;
     border-radius: 100%;
-    /* padding: 10px; */
+}
+
+.circle-done {
+    border-color: #4ccfb8;
+    color: #4ccfb8;
+}
+.circle-error {
+    color: #ff1010;
+    border-color: #ff1010;
 }
 
 .btn {
@@ -35,12 +47,18 @@ ul {
     border: 1px solid;
     padding: 10px;
     border-radius: 6px;
+    cursor: pointer;
 }
 
 .btn-blue {
-    background-color: blue;
+    background-color: #14aaf5;
     color: #ffffff;
-    border-color: blue;
+    border-color: #14aaf5;
+}
+
+.btn-gray {
+    color: #c4cbd0;
+    border-color: #c4cbd0;
 }
 
 .tag {
@@ -72,6 +90,7 @@ h1 {
     vertical-align: middle;
     font-weight: 900;
     font-size: 40px;
+    color: #000;
 }
 
 .logo {
@@ -83,8 +102,34 @@ h1 {
 -----------------------*/
 main {
     background-color: #ffffff;
-    width: 800px;
+    max-width: 800px;
     margin: auto;
     border-radius: 10px;
-    padding: 20px;
+}
+
+.buttons-list {
+    border-bottom: 1px solid #cccccc;
+    padding: 15px 40px;
+}
+
+.section-tasks {
+    padding: 0px 40px 30px 40px;
+}
+
+.tasks {
+    margin-top: 30px
+}
+
+h3 {
+    font-size: 22px;
+    margin-bottom: 14px;
+}
+
+.task {
+    margin-bottom: 14px;
+}
+
+.task-text {
+    margin-left: 4px;
+    margin-right: 4px;
 }
